@@ -1,0 +1,253 @@
+
+
+body {
+    font-family: 'Tahoma'; /* استفاده از فونت Estedad برای همهٔ متون */
+}
+
+.class-name {
+    font-family: 'Tahoma'; /* استفاده از فونت Estedad برای یک کلاس خاص */
+}
+
+
+.wrap11,
+.wrap21 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 1200px !important;
+    background-color: rgba(255, 255, 255, 0.247);
+
+
+}
+.wrap11:hover ,.wrap21:hover{
+    background-color: white;
+}
+.wrap11 h2{
+    font-family: 'Tahoma';
+}
+
+
+
+.wrap11 ul li {
+    font-size: 15px;
+
+    font-weight: 500;
+    line-height: 27px;
+}
+.wrap11 ul li:before{
+    content: "*    ";
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.wrap1 p,
+.wrap2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.form-table th {
+    font-weight: normal;
+    width: 300px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+
+.wrap1 ul li {
+    list-style-type: none; /* حذف نماد لیست */
+    padding: 5px 0; /* فاصله بین هر المان لیست */
+    font-size: 16px; /* اندازه فونت */
+    line-height: 1.5; /* ارتفاع خط */
+    color: #333; /* رنگ متن */
+}
+
+.wrap1 ul li:before {
+content: "\1989";
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-left: 20px;
+}
+
+
+
+.orders-list {
+    list-style-type: none;
+    padding: 0;
+	font-size: 12px;
+}
+
+.favorite-products-list {
+    list-style: none;
+    padding: 0;
+	
+}
+.user-wishlist{
+    width: 100%;
+}
+.favorite-product a{
+	width:25%;
+}
+.favorite-product div{
+	width:75%;
+}
+.product-info h3{
+	font-size:13px;
+	font-weight:600;
+	    text-align: right;
+    line-height: 25px;
+    height: 52px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Tahoma' !important;
+}
+
+.favorite-product {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding: 4px;
+    transition: all 0.3s ease;
+    flex-direction: row-reverse; /* تغییر جهت فلکس به عمودی */
+    position: relative; /* اضافه کردن position: relative برای استفاده از شیاد */
+}
+
+.favorite-product:hover {
+     border-color: #007bff; 
+}
+
+.favorite-product .product-price {
+color: #313131;
+    font-size: 16px !important;
+    float: left;
+    font-weight: 800;
+    transition: color 0.3s ease;
+    height: 55px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-family: 'Tahoma' !important;
+
+}
+
+.favorite-product:hover .product-price {
+    color: #ff5733; /* تغییر رنگ قیمت هنگام هاور کردن */
+}
+
+.product-info {
+    flex: 1;
+    text-align: center; /* تراز متن در وسط */
+}
+
+.product-info h3 {
+    margin: 0;
+}
+
+.product-price {
+    color: #007bff;
+}
+
+.product-thumbnail {
+    flex: 0 0 auto;
+    margin-top: 20px; /* فاصله بین تصویر و اطلاعات */
+}
+
+
+/* Style for each order item */
+.order-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.order-item .b1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+	justify-content: space-between;
+}
+.order-item .b2{
+    display: flex;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+/* Hover effect */
+.order-item:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Style for the order details */
+.order-details {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style for the order status */
+.order-status {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Style for the order total */
+.order-total {
+    font-weight: bold;
+    color: #28a745;
+}
+.orders-list .order-item.completed {
+    background-color: #c8e6c9; /* Green background for completed orders */
+}
+
+.orders-list .order-item.processing {
+    background-color: #ffecb3; /* Yellow background for processing orders */
+}
+
+.orders-list .order-item.on-hold {
+    background-color: #f8bbd0; /* Pink background for on-hold orders */
+}
+
+.orders-list .order-item.pending {
+    background-color: #fff9c4; /* Light yellow background for pending orders */
+}
+
+.orders-list .order-item.cancelled {
+    background-color: #ffccbc; /* Light red background for cancelled orders */
+}
+
+.orders-list .order-item.refunded {
+    background-color: #b2ebf2; /* Light blue background for refunded orders */
+}
+
+.orders-list .order-item.failed {
+    background-color: #ef9a9a; /* Light red background for failed orders */
+}
+
